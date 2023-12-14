@@ -113,6 +113,13 @@ train_log.csvなんだけど、$|seq|=1$のデータは、「宿Aを見た（$se
 
 ## TODO
 
+- ベースラインを基に提出できるようなものを作成
+    - [ベースライン？](https://www.guruguru.science/competitions/22/discussions/7319eed9-c403-4565-8f59-e148ec39c3f9/)
+    - [ベースライン？](https://www.guruguru.science/competitions/22/discussions/15dda0cc-eefb-4125-8b1b-44ca26a86a13/)
+    - [ベースライン](https://www.guruguru.science/competitions/22/discussions/3e9bfd60-2a43-452d-9f18-db37d20b77a1/)
+    - [ベースライン](https://www.guruguru.science/competitions/22/discussions/20c54ca7-a389-43b0-9028-92011fb52fd5/)
+    - [機械学習を使わないベースライン](https://www.guruguru.science/competitions/22/discussions/3ed58bd1-8d35-40e6-8202-db69ac858b3a/)
+
 ## 雑な方針検討メモ
 
 - 宿の数が少ないならば、適当にその地域のオススメ順を提案する
