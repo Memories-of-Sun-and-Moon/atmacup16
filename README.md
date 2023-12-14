@@ -1,5 +1,7 @@
 # atmaCup #16 in collaboration with RECRUIT
 
+![pic](https://media.connpass.com/thumbs/3d/82/3d82795d0f27c4b4e8336f4c9bc1e604.png)
+
 # お題
 
 リクルートのサービスである国内最大級の旅行予約サイト『じゃらんnet』の実データでセッション内の行動ログから、予約する宿を予測してもらいます（Session-Based Recommendation）
