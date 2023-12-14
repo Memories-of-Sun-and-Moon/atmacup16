@@ -15,6 +15,69 @@
 
 MAP@10
 
+# データの説明
+
+## train / test_log.csv
+
+学習 / テスト用の期間に対するあるセッションごとに出現した宿を記録したログデータです。seq_noが見た順番を表します。
+
+- session_id: セッションごとに割り振られたユニークなID.
+
+### 補足
+
+連続した同じ宿が出現する場合それらは1つの宿IDにまとめていることに注意してください。
+セッション内で最後に出現する宿は必ず正解ラベルとは異なる宿となります。これは現在閲覧している宿とは違う宿をレコメンドしたいというニーズのためです。
+
+## train_label.csv
+
+学習データのセッションが最終的にどの宿を予約したかを記録したcsvファイルです。
+
+- session_id: セッションごとに割り振られたユニークなID.
+- yad_no: 予約した宿ID
+
+## yado.csv
+
+宿に関する属性情報が記録されたcsvファイルです。
+
+yad_no: 宿ごとに割り振られたユニークなID
+以下は宿の属性に関する情報です。
+
+- yad_type : 宿泊種別（lodging type）
+- total_room_cnt : 部屋数（total number of rooms）
+- wireless_lan_flg : 無線LANがあるかどうか（wireless LAN connection）
+- onsen_flg : 温泉を有しているかどうか（flag with hot spring）
+- kd_stn_5min : 駅まで5分以内かどうか（within 5 minutes walk from the station）
+- kd_bch_5min : ビーチまで5分以内かどうか（within 5 minutes walk to the beach）
+- kd_slp_5min : ゲレンデまで5分以内かどうか（within 5 minutes walk to the slopes）
+- kd_conv_walk_5min : コンビニまで5分以内かどうか（within 5 minutes walk to convenience store）
+
+以下は宿の場所に関する情報です。「広域」から「小エリア」は階層構造になっています。（ex: 広域エリアには複数の県が紐づくが、1つの県に対しては1つの広域エリアのみが紐づく）
+
+- wid_cd : 広域エリアCD（wide area CD）
+- ken_cd : 県CD（prefecture CD）
+- lrg_cd : 大エリアCD（large area CD）
+- sml_cd : 小エリアCD（small area CD）
+
+## image_embeddings.parquet
+
+宿ごとに設定された画像の埋め込み結果です。
+
+- yad_no: 宿No
+- category: 画像の種類
+- emb_0 ~ emb_511: 対応する画像埋め込み結果
+
+## sample_submission.csv
+
+サンプルの提出 (submission) ファイルです。今回のコンペティションではテストデータと同じ並び順に予測ラベルを10件紐付けて予測してください。
+
+- predict_0 ~ predict_9: 予測した宿No.0がもっとも予測確度の高い宿でIndexの数字が大きくなるにつれて確度が下がるようにしてください。
+
+## test_session.csv
+
+提出用ファイルのセッションの並び順を表しているファイルです。test_log.csvに出現するすべてのsession_idを名前順にソートして作成されています。
+
+予測ファイルを作成する場合にはこのセッションの並びと同じ様に予測ラベルを作成してください。
+
 # 日記
 
 # 12/14
@@ -30,3 +93,10 @@ MAP@10
 
 とにかくEDAをしてみることから始める
 
+## やったこと
+
+- 問題概要をここに写す
+
+## TODO
+
+- MAP@10について深堀する
