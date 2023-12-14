@@ -95,7 +95,7 @@ yad_no: 宿ごとに割り振られたユニークなID
 
 [はじめてのサブミット](https://github.com/Memories-of-Sun-and-Moon/atmacup16/issues/1)を読んだ。出現した宿をサブミットしたら``LB:0.2893``でたというもの。
 
-train_log.csvなんだけど、$|seq|=1$のデータは、「宿Aを見た（$seq_no = 0$）」→「宿Bを予約した」って感じなのかな。自信がない。
+train_log.csvなんだけど、$|seq|=1$のデータは、「宿Aを見た（$seq\_no = 0$）」→「宿Bを予約した」って感じなのかな。自信がない。
 
 とにかくEDAをしてみることから始める
 
