@@ -91,6 +91,7 @@ yad_no: 宿ごとに割り振られたユニークなID
 
 クッソ遅れたけど今から始める。
 
+[はじめてのサブミット](https://github.com/Memories-of-Sun-and-Moon/atmacup16/issues/1)を読んだ。出現した宿をサブミットしたら``LB:0.2893``でたというもの。
 
 とにかくEDAをしてみることから始める
 
