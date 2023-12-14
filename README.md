@@ -97,11 +97,18 @@ yad_no: 宿ごとに割り振られたユニークなID
 
 train_log.csvなんだけど、$|seq|=1$のデータは、「宿Aを見た（$seq\_no = 0$）」→「宿Bを予約した」って感じなのかな。自信がない。
 
-とにかくEDAをしてみることから始める
+とにかくEDAをしてみることから始める。
+
+[train/test_logをサクッとEDA](https://github.com/Memories-of-Sun-and-Moon/atmacup16/issues/3)
+
+> train_log.csvなんだけど、$|seq|=1$のデータは、「宿Aを見た（$seq\_no = 0$）」→「宿Bを予約した」って感じなのかな。自信がない。
+
+そういう認識でよさそう。
 
 ## やったこと
 
 - 問題概要をここに写す
 - MAP@10について深堀する
+- 001_eda.ipynb
 
 ## TODO
