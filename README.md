@@ -121,10 +121,19 @@ train_log.csvなんだけど、$|seq|=1$のデータは、「宿Aを見た（$se
 
 をやった。
 
+[#2 初心者向け講座 モデルを改善する]()
+
+をみた。
+- ``wid_cd`` が異なるものを候補集合に出すのは意味がなさそう
+    - 99.5 % で一致している
+
+- 1回も出現していない宿もある（そりゃそうか）
+
 ## TODO
 
+ちょっとわからないところが出てきてしまって詰んでいる。あとで動画を見返そう。
+
 - ベースラインを基に提出できるようなものを作成
-    - [ベースライン？](https://www.guruguru.science/competitions/22/discussions/7319eed9-c403-4565-8f59-e148ec39c3f9/)
     - [ベースライン？](https://www.guruguru.science/competitions/22/discussions/15dda0cc-eefb-4125-8b1b-44ca26a86a13/)
     - [ベースライン](https://www.guruguru.science/competitions/22/discussions/3e9bfd60-2a43-452d-9f18-db37d20b77a1/)
     - [ベースライン](https://www.guruguru.science/competitions/22/discussions/20c54ca7-a389-43b0-9028-92011fb52fd5/)
