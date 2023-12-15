@@ -117,6 +117,10 @@ train_log.csvなんだけど、$|seq|=1$のデータは、「宿Aを見た（$se
 
 コンペ2日目です。後れを取りすぎているので、積極的に頑張りたいところ。
 
+[#1 初心者向け講座 データと課題を理解してSubmitする!](https://github.com/Memories-of-Sun-and-Moon/atmacup16/issues/4)
+
+をやった。
+
 ## TODO
 
 - ベースラインを基に提出できるようなものを作成
