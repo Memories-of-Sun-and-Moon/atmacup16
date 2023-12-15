@@ -121,7 +121,7 @@ train_log.csvなんだけど、$|seq|=1$のデータは、「宿Aを見た（$se
 
 をやった。
 
-[#2 初心者向け講座 モデルを改善する]()
+[#2 初心者向け講座 モデルを改善する](https://github.com/Memories-of-Sun-and-Moon/atmacup16/issues/5)
 
 をみた。
 - ``wid_cd`` が異なるものを候補集合に出すのは意味がなさそう
